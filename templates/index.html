@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    body{
+          background-image: url('https://scontent.fnag1-1.fna.fbcdn.net/v/t1.6435-9/120041368_3339817009469173_4244787508057014741_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=tzT3D80IgFgAX_8L3YO&_nc_ht=scontent.fnag1-1.fna&oh=00_AfBdOufSVl4RSEtprAiJcsZt6RAxNSHRGyCKMZ0yTJyIVw&oe=63BAAEBC');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jsw Paints Product Verification Portal</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Navigation</title>
+        <style>
+            .navbar{
+                background-color: rgba(12, 0, 0, 0.986);
+                border-radius: 30px;
+                
+            }
+            .navbar ul{
+                overflow: auto;
+            }
+            .navbar li{
+                float:left;
+                list-style: none; 
+                margin: 13px 20px;
+                
+            }
+            .navbar li a{
+                padding: 3px 3px;
+                text-decoration: none;
+                color: rgb(245, 239, 239);
+            }
+            .navbar li a:hover{
+                color: rgb(0, 255, 42)
+            }
+            .search{
+                float: right;
+                color: rgb(235, 207, 207);
+                padding: 12px 75px;
+            }
+            .navbar input{
+                border: 2px solid rgb(12, 1, 1);
+                border-radius: 14px;
+                padding: 3px 17px;
+                width: 129px;
+            }
+        </style>
+        
+    </head>
+    
+    <body>
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <div class="search">
+                        <input type="text" name="search" id="search" placeholder="Search this website">
+                    </div>
+                </ul>
+            </nav>
+        </header>
+    </body>
+</head>
+
+<body>
+
+    <h1> Jsw Paints Product Verification Portal</h1>
+    <form method="POST" action="/predict_Coupon">
+
+        
+        
+        <label>Plant:</label>
+        <select name = "Plant">
+            <option value = "One">One</option>
+            <option value = "Two">Two</option>
+            <option value = "Three">Three</option>
+            <option value = "Four">Four</option>
+            <option value = "Five">Five</option>
+            
+        </select>
+
+        <br>
+        <br>
+        <label>Manufacturing_Plant:</label>
+        <select name = "Manufacturing_Plant">
+            <option value = "Bellary">Bellary</option>
+            <option value = "Vasind">Vasind</option>
+        </select>
+
+        <br>
+        <br>
+        <label>Hub_Location:</label>
+        <select name = "Hub_Location">
+            <option value = "Aurangabad">Aurangabad</option>
+            <option value = "Goa">Goa</option>
+            <option value = "Kolhapur">Kolhapur</option>
+            <option value = "Nagpur">Nagpur</option>
+            <option value = "Nashik">Nashik</option>
+          
+        </select>
+
+        <br>
+        <br>
+        <label>Brand:</label>
+        <select name = "Brand">
+            <option value = "AE">AE</option>
+            <option value = "AI">AI</option>
+            <option value = "ASI">ASI</option>
+            <option value = "EWP">EWP</option>
+            <option value = "HE">HE</option>
+            <option value = "HI">HI</option>
+            <option value = "HSI">HSI</option>
+            <option value = "IBWPE">IBWPE</option>
+            <option value = "IBWPI">IBWPI</option>
+            <option value = "IBWR">IBWR</option>
+            <option value = "IWP">IWP</option>
+            
+        </select>
+
+        <br>
+        <br>
+        <label>Surface:</label>
+        <select name = "Surface">
+            <option value = "INTERIOR">INTERIOR</option>
+            <option value = "EXTERIOR">EXTERIOR</option>
+            
+            
+
+        </select>
+
+        <br>
+        <br>
+        <label>Pack:</label>
+        <input type = "text" name = "Pack">
+            
+    
+            
+
+        <br>
+        <br>
+        <label>Price:</label>
+        <input type = "text" name = "Price">
+        
+        <br>
+        <br>
+
+        <br>
+        <br>
+        <label>Year:</label>
+        <input type = "text" name = "Year">
+        
+        <br>
+        <br>
+
+        <label>Awarded_points:</label>
+        <input type = "text" name = "Awarded_points">
+        
+
+
+        <br>
+        <br>
+
+        <input type = "submit" value="SUBMIT">
+
+        <br>
+
+        <p><b><h2>{{ prediction }}</h2></b></p>
+        <p>
+        <a href="https://www.jswpaints.in">Contact us</a>
+        </p>
+    </form>
+
+ 
+</body>
+</html>
